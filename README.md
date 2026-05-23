@@ -1,6 +1,6 @@
 # LLM Wiki — No-Code Knowledge Management System
 
-A **no-code implementation** of [Andrej Karpathy's LLM Wiki concept](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f).
+A **no-code implementation** of [Andrej Karpathy's LLM Wiki concept](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f) for **Claude Code** and **GitHub Copilot**.
 
 Ingest documents. Ask questions. Maintain a living knowledge base — all without writing a single line of code.
 
@@ -66,7 +66,7 @@ While the system is designed for no-code operation, **you can manually edit mark
 2. **Place a document** in `raw/my-guide.md`
 3. **Ingest it**:
    ```
-   /wiki-ingest raw/my-guide.md
+   /wiki-ingest
    ```
 4. **Ask questions**:
    ```
@@ -79,6 +79,25 @@ While the system is designed for no-code operation, **you can manually edit mark
 6. **Review and approve**:
    - Move answers from `questions_pending/` → `questions_approved/`
    - Run `/wiki-ingest` to integrate them as synthesis pages
+
+---
+
+## Example Files
+
+The `bak/` directory contains **ready-to-use example documents** for testing the wiki:
+
+1. **[afw-instructions.md](bak/afw-instructions.md)** — Technical documentation (Microsoft Agent Framework best practices)
+2. **[mfa_agents_howto.md](bak/mfa_agents_howto.md)** — How-to guide documentation (Microsoft Agent Framework agents)
+3. **[ARCH_BOOKING_PLATFORM.md](bak/ARCH_BOOKING_PLATFORM.md)** — Simulated application requirements (Corporate Booking Platform architecture)
+
+**To test the wiki**, copy any of these files to `raw/` and ingest:
+
+```
+cp bak/ARCH_BOOKING_PLATFORM.md raw/
+/wiki-ingest
+```
+
+These examples demonstrate how the wiki extracts entities, concepts, and relationships from diverse source documents.
 
 ---
 
