@@ -178,6 +178,32 @@ Two-phase validation:
 
 ---
 
+## Project Configuration Files
+
+### `.claude/` — Claude Code Configuration
+
+| File | Purpose |
+|------|---------|
+| **[CLAUDE.md](.claude/CLAUDE.md)** | Project instructions and behavioral constraints |
+| **[settings.json](.claude/settings.json)** | Command registration and harness configuration |
+| **[commands/wiki-ingest.md](.claude/commands/wiki-ingest.md)** | `/wiki-ingest` command workflow definition |
+| **[commands/wiki-query.md](.claude/commands/wiki-query.md)** | `/wiki-query` command workflow definition |
+| **[commands/wiki-lint.md](.claude/commands/wiki-lint.md)** | `/wiki-lint` command workflow definition |
+
+### `.github/` — GitHub Copilot Configuration
+
+| File | Purpose |
+|------|---------|
+| **[prompts/wiki-ingest.prompt.md](.github/prompts/wiki-ingest.prompt.md)** | LLM prompt for ingest command |
+| **[prompts/wiki-query.prompt.md](.github/prompts/wiki-query.prompt.md)** | LLM prompt for query command |
+| **[prompts/wiki-lint.prompt.md](.github/prompts/wiki-lint.prompt.md)** | LLM prompt for lint command |
+| **[instructions/wiki-schema.instructions.md](.github/instructions/wiki-schema.instructions.md)** | Shared page format and schema documentation |
+| **[agents/wiki-ingestor.agent.md](.github/agents/wiki-ingestor.agent.md)** | Ingestor agent definition |
+| **[agents/wiki-querier.agent.md](.github/agents/wiki-querier.agent.md)** | Querier agent definition |
+| **[agents/wiki-linter.agent.md](.github/agents/wiki-linter.agent.md)** | Linter agent definition |
+
+---
+
 ## Design Philosophy
 
 **Knowledge without pollution** — Your wiki grows only from sources you feed it. No training data, no synthesis, no hallucinations.
