@@ -1,0 +1,16 @@
+{
+  "commands": {
+    "wiki-ingest": {
+      "description": "Ingest raw documents into the wiki",
+      "file": "commands/wiki-ingest.command.md"
+    },
+    "wiki-query": {
+      "description": "Query the wiki knowledge base",
+      "file": "commands/wiki-query.command.md"
+    },
+    "wiki-lint": {
+      "description": "Run wiki health checks",
+      "file": "commands/wiki-lint.command.md"
+    }
+  }
+}
